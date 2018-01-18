@@ -111,7 +111,7 @@ h2 {
     color:white;
     animation-name:computer;
     animation-iteration-count: infinite;
-    animation-duration:2s;
+    animation-duration:5s;
     
 }
 @keyframes computer {
@@ -132,7 +132,7 @@ li {
     margin:20px ;
     margin-left:10px;
     padding:0 20px 0 20px;
-    display:inline;
+    /*display:inline;*/
    
 }
 li:hover {
