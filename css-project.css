@@ -1,22 +1,94 @@
 .container {
     width:100%;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     margin-top:100px;
     background:#f9f9f9;
     font-size:24px;
         /*padding:25px;*/
 }
 .parallax {
-    background:url('http://i.vimeocdn.com/video/592857175_1280x720.jpg') no-repeat center;
-    background-size:cover;
+    /*width:100%;*/
+    background:url('computer-components/desktop.png') no-repeat center;
+    background-size: 800px 500px;
+    /*background-size:cover;*/
     background-attachment: fixed;
     height:500px;
+}
+.parallax1 {
+    /*width:100%;*/
+    background:url('computer-components/CPU.jpg') no-repeat center;
+    /*background-size:cover;*/
+    background-attachment: fixed;
+    height:500px;
+}
+.parallax2 {
+    /*width:100%;*/
+    background:url('computer-components/GPU.jpg') no-repeat center;
+    /*background-size:cover;*/
+    background-attachment: fixed;
+    height:500px;
+}
+.parallax3 {
+    /*width:100%;*/
+    background:url('computer-components/RAM.jpg') no-repeat center;
+    /*background-size:cover;*/
+    background-attachment: fixed;
+    height:500px;
+}
+.parallax4 {
+    /*width:100%;*/
+    background:url('computer-components/hahard-drive.jpg') no-repeat center;
+    /*background-size:cover;*/
+    background-attachment: fixed;
+    height:500px;
+}
+.parallax5 {
+    /*width:100%;*/
+    background:url('computer-components/motherboard.jpg') no-repeat center;
+    /*background-size:cover;*/
+    background-attachment: fixed;
+    height:500px;
+}
+.parallax6 {
+    /*width:100%;*/
+    background:url('computer-components/power-supply.jpg') no-repeat center;
+    /*background-size:cover;*/
+    background-attachment: fixed;
+    height:500px;
+}
+.parallax7 {
+    /*width:100%;*/
+    background:url('computer-components/case.png') no-repeat center;
+    background-size:500px 500px;
+    /*background-size:cover;*/
+    background-attachment: fixed;
+    height:500px;
+}
+.parallax8 {
+    /*width:100%;*/
+    background:url('computer-components/monitor.png') no-repeat center;
+    background-size:800px 500px;
+    /*background-size:cover;*/
+    background-attachment: fixed;
+    height:500px;
+}
+/*.parallax9 {
+    
+    background:url('computer-components/monitor.png') no-repeat center;
+    
+    background-attachment: fixed;
+    height:500px;
+}*/
+p {
+    width:960px;
+    margin: 0 auto;
 }
 h2 {
     /*margin:200auto;*/
     text-align:center;
     padding:210px 300px;
     color:white;
+    text-shadow: 2px 2px 2px #000000;
 }
 .box {
     width:960px;
@@ -25,7 +97,7 @@ h2 {
     /*padding-bottom:20px;*/
 }
 .header {
-    background-color:lightblue;
+    background: linear-gradient(to bottom right, white, blue);
     width:100%;
     height: 100px;
     top:0;
@@ -34,6 +106,20 @@ h2 {
 .logo{
     float:left;
     padding-bottom:50px;
+}
+.computers {
+    color:white;
+    animation-name:computer;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+    
+}
+@keyframes computer {
+    0% {color:white;}
+    25% {color:lightblue;}
+    50% {color:blue;}
+    75% {color:darkblue;}
+    100% {color:blue;}
 }
 .nav {
     float: right;
@@ -44,9 +130,14 @@ li {
     float: left;
     list-style:none;
     margin:20px ;
-    /*top:20px;*/
-    /*padding-bottom:50px;*/
-    /*margin-bottom: 10px;*/
+    margin-left:10px;
+    padding:0 20px 0 20px;
+    display:inline;
+   
+}
+li:hover {
+    font-size:20px;
+    /*color:black;*/
 }
 a {
     text-decoration: none;
