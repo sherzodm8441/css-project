@@ -6,14 +6,16 @@
     font-size:24px;
         /*padding:25px;*/
 }
-.parallax {
+.parallax { /*div for the fixed background*/
     /*width:100%;*/
     background:url('computer-components/desktop.png') no-repeat center;
     background-size: 800px 500px;
     /*background-size:cover;*/
-    background-attachment: fixed;
+    background-attachment: fixed; /*prevents the backgroung img from moving--creates the parallax effect*/
     height:500px;
+    
 }
+
 .parallax1 {
     /*width:100%;*/
     background:url('computer-components/CPU.jpg') no-repeat center;
@@ -84,12 +86,21 @@ p {
     margin: 0 auto;
 }
 h2 {
-    /*margin:200auto;*/
+    position:relative;
+    margin:0 auto;
     text-align:center;
-    padding:210px 300px;
+    top:200px;
+    /*padding:210px 300px;*/
     color:white;
     text-shadow: 2px 2px 2px #000000;
+    width:200px;
+    height:100px;
+    transition:1s ease-in-out;
 }
+h2:hover {
+    transform:rotateZ(360deg);
+}
+
 .box {
     width:960px;
     height:100px;
@@ -110,8 +121,12 @@ h2 {
 .computers {
     color:white;
     animation-name:computer;
+    
+
     animation-iteration-count: infinite;
     animation-duration:5s;
+    transition:2s ease-in-out;
+     
     
 }
 @keyframes computer {
@@ -120,7 +135,12 @@ h2 {
     50% {color:blue;}
     75% {color:darkblue;}
     100% {color:blue;}
+   
 }
+.computers:hover {
+     transform: rotateZ(360deg);
+}
+
 .nav {
     float: right;
     margin-bottom: 50px;
@@ -142,3 +162,53 @@ li:hover {
 a {
     text-decoration: none;
 }
+footer {
+    width:960px;
+    margin:0 auto;
+    margin-top:20px;
+    height:70px;
+    background:#424747;
+    color:white;
+}
+.yt {
+    top:15px;
+    left:50px;
+    position:relative;
+    margin:0 auto;
+    /*margin-bottom:10px;*/
+    height:50px;
+    width:200px;
+    color:white;
+    background:#1fddd7;
+    padding:10px;
+    opacity:0;
+    transition:opacity 1s;
+    /*display:inline-block;*/
+    
+
+
+}
+.yt:hover {
+     color:red;
+     opacity:1;
+     /*font-size:45px;*/
+}
+.test {
+    margin:0 auto;
+    width: 100px;
+    height: 50px;
+    background: red;
+    transition: width 2s;
+}
+
+.test:hover {
+    width: 300px;
+}
+/*.youtube {
+    width: 200px;
+    transition: width 2s ease-in-out;
+    border-color:red;
+}
+.youtube:hover {
+    width:400px;
+}*/
