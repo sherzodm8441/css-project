@@ -1,4 +1,4 @@
-.container {
+.container {  /*container divs contain all the parallax divs*/
     width:100%;
     margin: 0 auto;
     margin-top:100px;
@@ -8,10 +8,10 @@
 }
 .parallax { /*div for the fixed background*/
     /*width:100%;*/
-    background:url('computer-components/desktop.png') no-repeat center;
+    background:url('computer-components/desktop.png') no-repeat/*one image*/ center;
     background-size: 800px 500px;
     /*background-size:cover;*/
-    background-attachment: fixed; /*prevents the backgroung img from moving--creates the parallax effect*/
+    background-attachment: fixed; /*prevents the background img from moving--creates the parallax effect*/
     height:500px;
     
 }
@@ -84,10 +84,12 @@
 p {
     width:960px;
     margin: 0 auto;
+    margin-top:30px;
 }
 h2 {
     position:relative;
     margin:0 auto;
+    /*margin-top: 30px;*/
     text-align:center;
     top:200px;
     /*padding:210px 300px;*/
@@ -98,10 +100,10 @@ h2 {
     transition:1s ease-in-out;
 }
 h2:hover {
-    transform:rotateZ(360deg);
+    transform:rotateZ(360deg); /*causes the words above the background imgs to rotate*/
 }
 
-.box {
+.box {/*contains the logo and the nav bar options*/
     width:960px;
     height:100px;
     margin:0 auto;
@@ -129,7 +131,7 @@ h2:hover {
      
     
 }
-@keyframes computer {
+@keyframes computer {/*causes the color of the logo to change constantly*/
     0% {color:white;}
     25% {color:lightblue;}
     50% {color:blue;}
@@ -137,11 +139,11 @@ h2:hover {
     100% {color:blue;}
    
 }
-.computers:hover {
+/*.computers:hover {
      transform: rotateZ(360deg);
-}
+}*/
 
-.nav {
+.nav { /*navigation bar*/
     float: right;
     margin-bottom: 50px;
     
@@ -155,12 +157,12 @@ li {
     /*display:inline;*/
    
 }
-li:hover {
+li:hover {/*causes the options in the navbar to enlarge when the mouse is over them*/
     font-size:20px;
     /*color:black;*/
 }
 a {
-    text-decoration: none;
+    text-decoration: none;/*removes the underline from the links*/
 }
 footer {
     width:960px;
@@ -170,7 +172,7 @@ footer {
     background:#424747;
     color:white;
 }
-.yt {
+.yt {/*link*/
     top:15px;
     left:50px;
     position:relative;
@@ -182,33 +184,34 @@ footer {
     background:#1fddd7;
     padding:10px;
     opacity:0;
-    transition:opacity 1s;
+    transition:opacity .5s;
     /*display:inline-block;*/
     
 
 
 }
-.yt:hover {
+.yt:hover {/*increases the opacity and the color of the link*/
      color:red;
      opacity:1;
      /*font-size:45px;*/
 }
-.test {
+.test {/*red box*/
     margin:0 auto;
+    margin-top:50px;
+    margin-bottom: 50px;
     width: 100px;
     height: 50px;
     background: red;
     transition: width 2s;
 }
 
-.test:hover {
+.test:hover {/*causes the red box to extend to both sides*/
     width: 300px;
 }
-/*.youtube {
-    width: 200px;
-    transition: width 2s ease-in-out;
-    border-color:red;
+
+
+h5 {
+    position:relative;
+    top:20px;
+    left:10px;
 }
-.youtube:hover {
-    width:400px;
-}*/
